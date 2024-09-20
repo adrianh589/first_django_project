@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalle de la persona</title>
+</head>
+<body>
+
+<h1>Detalle persona</h1>
+
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+        </tr>
+        
+        <tr>
+            <td>{{ persona.id }}</td>
+            <td>{{ persona.nombre }}</td>
+            <td>{{ persona.apellido }}</td>
+            <td>{{ persona.email }}</td>
+        </tr>
+    </table>
+
+<a href="{% url 'index' %}">Regresar al inicio</a>
+</body>
+</html>
